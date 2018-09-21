@@ -1,0 +1,32 @@
+{
+  "name": "whois-api/email-verifier",
+  "version": "1.0.0",
+  "description": "The simplest possible way to verify an email address in PHP.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Whois XML API, Inc.",
+      "homepage": "https://emailverification.whoisxmlapi.com/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.0",
+    "nesbot/carbon": "~1.18",
+    "php" : "^5.5 || ^7.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7",
+    "phpunit/php-code-coverage": "^6.0"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit --testdox tests"
+  },
+  "autoload": {
+    "psr-4": {
+      "WhoisApi\\EmailVerifier\\": "src/"
+    }
+  }
+}
